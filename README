@@ -1,0 +1,19 @@
+## TicTacToe Game
+
+This is a simple TicTacToe game that can be played with AI. The AI is implemented using the minimax algorithm and also minimax alpha-beta pruning algorithm.
+The game is implemented using Java and JavaSwing for the GUI.
+
+## Team Members
+- Olulode Olatunbosun
+- Heuser Valentin
+- Balogun Oluwatosin
+
+
+## How to run the game
+ download the project and run the `Launcher.java` file in the `src` folder.
+
+## How to play the game
+- The game is played with ai so you can play against the ai.
+- The game is played on a 3x3 grid.
+
+

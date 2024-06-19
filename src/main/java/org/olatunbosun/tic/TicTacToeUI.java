@@ -1,6 +1,6 @@
 package org.olatunbosun.tic;
 
-import org.olatunbosun.tic.algo.MinMax;
+import org.olatunbosun.tic.algo.MiniMax;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.olatunbosun.tic.store.GameData;
 
@@ -22,7 +22,7 @@ public class TicTacToeUI extends JFrame {
 
     private Board gameBoard;
 
-    private MinMax minimax;
+    private MiniMax minimax;
     private JButton[][] buttons;
     private boolean playerTurn;
     private GameData gameData;
@@ -34,7 +34,7 @@ public class TicTacToeUI extends JFrame {
 
     public TicTacToeUI() {
         gameBoard = new Board();
-        minimax = new MinMax(gameBoard);
+        minimax = new MiniMax(gameBoard);
         buttons = new JButton[3][3];
         playerTurn = true;
         gameData = loadGameData();
@@ -110,7 +110,7 @@ public class TicTacToeUI extends JFrame {
 
     private void resetGame() {
         gameBoard = new Board();
-        minimax = new MinMax(gameBoard);
+        minimax = new MiniMax(gameBoard);
         playerTurn = true;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
